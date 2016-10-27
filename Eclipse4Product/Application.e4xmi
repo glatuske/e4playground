@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_c3AF0MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.application" bindingContexts="_c3AF2cjYEeSyMNYR5xypkQ">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_c3AF0cjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.window.main" label="Empty E4 Application" width="500" height="400">
+    <tags>shellMaximized</tags>
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_h-Q4kI8IEea9DbN0aP5uXg" elementId="eclipse4product.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_kPBaQI8IEea9DbN0aP5uXg" elementId="eclipse4product.perspective.perspective1" label="Perspective 1" iconURI="platform:/plugin/Eclipse4Product/icons/sample.png" tooltip="Perspective 2">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_ssYBEI8IEea9DbN0aP5uXg" elementId="eclipse4product.partsashcontainer.0" horizontal="true">
+          <children xsi:type="basic:Part" xmi:id="_ubspoI8IEea9DbN0aP5uXg" elementId="eclipse4product.part.samplepart" containerData="2000" contributionURI="bundleclass://Eclipse4Product/eclipse4product.SamplePart" label="Sample Part"/>
+          <children xsi:type="basic:PartStack" xmi:id="_E7wWMI8JEea9DbN0aP5uXg" elementId="eclipse4product.partstack.0" containerData="8000"/>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_aLB9EI8ZEeaHZcsOzK7YZQ" elementId="eclipse4product.menu.0">
+      <children xsi:type="menu:Menu" xmi:id="_a_e40I8ZEeaHZcsOzK7YZQ" elementId="eclipse4product.menu.file" label="&amp;File">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_m6bA0I8ZEeaHZcsOzK7YZQ" elementId="eclipse4product.directmenuitem.open" label="&amp;Open" iconURI="platform:/plugin/Eclipse4Product/icons/sample.png" contributionURI="bundleclass://Eclipse4Product/eclipse4product.OpenSamleEditorPart"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_eeD4gI8ZEeaHZcsOzK7YZQ" elementId="eclipse4product.handledmenuitem.0" iconURI="platform:/plugin/Eclipse4Product/icons/save_edit.png" command="_bYxgYI8KEea9DbN0aP5uXg"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_LpSvwI8KEea9DbN0aP5uXg" elementId="eclipse4product.trimbar.0">
+      <children xsi:type="menu:ToolBar" xmi:id="_BUQuQI8NEea9DbN0aP5uXg" elementId="eclipse4product.toolbar.0">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_BUQuQY8NEea9DbN0aP5uXg" elementId="eclipse4product.handledtoolitem.saveas" label="Save As..." iconURI="platform:/plugin/Eclipse4Product/icons/save_edit.png" command="_bYxgYI8KEea9DbN0aP5uXg"/>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_fMjLoI8YEeaHZcsOzK7YZQ" elementId="eclipse4product.directtoolitem.0" iconURI="platform:/plugin/Eclipse4Product/icons/sample.png" contributionURI="bundleclass://Eclipse4Product/eclipse4product.OpenSampleEditorPart"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_fKBvUJxOEea0-rY2tKeutA" elementId="eclipse4product.handledtoolitem.0" iconURI="platform:/plugin/Eclipse4Product/icons/common_tab.png" selected="true" type="Radio" command="_t9ZScJxNEea0-rY2tKeutA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ztFjsJxOEea0-rY2tKeutA" elementId="eclipse4product.handledtoolitem.1" iconURI="platform:/plugin/Eclipse4Product/icons/environment_obj.png" type="Radio" command="_t9ZScJxNEea0-rY2tKeutA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_1eP_UJxOEea0-rY2tKeutA" elementId="eclipse4product.handledtoolitem.2" iconURI="platform:/plugin/Eclipse4Product/icons/overview_obj.png" type="Radio" command="_t9ZScJxNEea0-rY2tKeutA"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_dwm6cI8KEea9DbN0aP5uXg" elementId="eclipse4product.handler.0" contributionURI="bundleclass://Eclipse4Product/eclipse4product.SaveAsHandler" command="_bYxgYI8KEea9DbN0aP5uXg"/>
+  <handlers xmi:id="_vH7L4JxNEea0-rY2tKeutA" elementId="eclipse4product.handler.1" contributionURI="bundleclass://Eclipse4Product/eclipse4product.RadioHandler" command="_t9ZScJxNEea0-rY2tKeutA"/>
+  <rootContext xmi:id="_c3AF2cjYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_c3AF2sjYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_c3AF28jYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <descriptors xmi:id="__YqjQI8XEeaHZcsOzK7YZQ" elementId="eclipse4product.partdescriptor.0" iconURI="platform:/plugin/Eclipse4Product/icons/sample.png" allowMultiple="true" closeable="true" contributionURI="bundleclass://Eclipse4Product/eclipse4product.SampleEditorPart"/>
+  <commands xmi:id="_bYxgYI8KEea9DbN0aP5uXg" elementId="eclipse4product.command.saveas" commandName="Save as..."/>
+  <commands xmi:id="_t9ZScJxNEea0-rY2tKeutA" elementId="eclipse4product.command.radio" commandName="Radio"/>
+  <addons xmi:id="_c3AF0sjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_c3AF08jYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_c3AF1MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_c3AF1cjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_c3AF1sjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_c3AF18jYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_c3AF2MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
